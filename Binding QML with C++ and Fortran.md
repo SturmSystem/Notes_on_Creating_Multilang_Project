@@ -175,7 +175,7 @@ subroutine example() bind(c)
 end subroutine example
 ```
 
-Since we declared function like this, we're able to use it in our C programs. We should [compile object file](#compiling-libs) and compile our C++ with this object file. In __.cpp__ file we should declare the function we gonna use
+Since we declared function like this, we're able to use it in our C programs. We should [compile object file](#23-compile-libs) and compile our C++ with this object file. In __.cpp__ file we should declare the function we gonna use
 ```cpp
 extern "C" {
     void example();
