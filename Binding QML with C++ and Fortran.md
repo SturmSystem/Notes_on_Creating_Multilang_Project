@@ -253,9 +253,9 @@ Basicly, we can derive 2 groups of compilers, that will nicely work with each ot
 
 | First group | Second group |
 | :-: | :-: |
-| gcc, g++, gfortran | ifort (Intel Compiler), cl (Visual Studio compiler, in Qt it is MSVC compiler) and PGI |
+| gcc, g++, gfortran, PGI | ifort (Intel Compiler), cl (Visual Studio compiler, in Qt it is MSVC compiler) |
 
-PGI compiler is used to add CUDA Fortran which is necessary to really large calculations. So, I'll use group of ifort+cl compilers.
+PGI compiler is used to add CUDA Fortran. But Intell Compilers have really better optimization. I'll use group of ifort+cl compilers.
 
 ### 2.3 Compile libs
 Well, let's suppose we created Fortran program with needed function, so now we have to files
